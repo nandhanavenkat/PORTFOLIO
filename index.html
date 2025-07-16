@@ -212,39 +212,41 @@
     <!-- Contact Section Code -->
     <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
-    <form action="https://formsubmit.co/nandhana01512@gmail.com" method="POST">
-        <div class="input-box">
-            <input type="text" name="name" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
-        </div>
-        <div class="input-box">
-            <input type="number" name="phone" placeholder="Phone Number">
-            <input type="text" name="subject" placeholder="Subject">
-        </div>
-        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-        <input type="hidden" name="_captcha" value="false">
-        <input type="submit" value="Send Message" class="btn-t">
-    </form>
+    <form id="contact-form">
+    <div class="input-box">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+    </div>
+    <div class="input-box">
+        <input type="number" name="phone" placeholder="Phone Number">
+        <input type="text" name="subject" placeholder="Subject">
+    </div>
+    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" class="btn-t">
+</form>
+
 </section>
 
-script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
     (function () {
-        emailjs.init("VBlUp40oApzNLfVyh"); // 🔑 Replace with your Public Key
+        emailjs.init("VBlUp40oApzNLfVyh"); // Your actual public key
     })();
 
     document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
+        event.preventDefault(); // Prevent redirect
 
         emailjs.sendForm('service_q561rxl', 'template_xqfs346', this)
             .then(function () {
                 alert('✅ Message sent successfully!');
-                document.getElementById('contact-form').reset(); // Clear form
+                document.getElementById('contact-form').reset();
             }, function (error) {
-                alert('❌ Failed to send message.\n' + JSON.stringify(error));
+                alert('❌ Failed to send message.\nPlease try again later.');
+                console.log(error);
             });
     });
 </script>
+
     <!-- Footer Section Code -->
     <footer class="footer">
         <div class="social">
