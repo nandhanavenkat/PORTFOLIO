@@ -59,3 +59,14 @@ sr.reveal(".featured-text" ,{});
 sr.reveal(".home-img", { delay: 200 });
 
 sr.reveal(".heading", {});
+function toggleSubTopics(linkElement) {
+  const subtopicDiv = linkElement.nextElementSibling;
+
+  if (subtopicDiv.classList.contains('hidden')) {
+    subtopicDiv.classList.remove('hidden');
+    linkElement.textContent = "Hide topics...";
+  } else {
+    subtopicDiv.classList.add('hidden');
+    linkElement.textContent = "Learn more...";
+  }
+}

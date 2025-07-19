@@ -666,3 +666,27 @@ li>a>button:hover>span:last-of-type {
 section {
   scroll-margin-top: 100px; /* Change this based on navbar height */
 }
+.learn-more {
+  display: inline-block;
+  color: #00ff99;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.subtopics {
+  margin-top: 10px;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.subtopics.hidden {
+  display: none;
+}
+
+.subtopics ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
