@@ -489,7 +489,8 @@ li>a>button:hover>span:last-of-type {
     max-width: 90rem;
     margin: 1rem auto;
     text-align: center;
-    margin-bottom: 3rem;
+    padding-bottom: 6rem;  /* You can increase to 8rem or 100px if needed */
+    padding-top: 10rem; 
 }
 
 .contact form .input-box {
@@ -580,7 +581,7 @@ li>a>button:hover>span:last-of-type {
 }
 
 .footer .copyright {
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
     font-size: 16px;
     color: #fff;
@@ -667,19 +668,30 @@ section {
   scroll-margin-top: 100px; /* Change this based on navbar height */
 }
 .learn-more {
-  display: inline-block;
-  color: #00ff99;
+   display: inline-block;
+  color: #00ffaa;
   text-decoration: underline;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 16px;
   margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.learn-more:hover {
+  color: #00ffcc;
 }
 
 .subtopics {
-  margin-top: 10px;
-  padding-left: 15px;
-  font-size: 14px;
-  color: #ddd;
+   margin-top: 10px;
+  padding: 25px;
+  border-radius: 12px;
+  font-size: 20px !important;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
 }
 
 .subtopics.hidden {
@@ -688,5 +700,9 @@ section {
 
 .subtopics ul {
   list-style-type: disc;
-  margin-left: 20px;
+  margin-left: 25px;
+  padding-left: 10px;
+}
+.subtopics ul li {
+  margin-bottom: 12px; /* 👈 Space between subtopics */
 }

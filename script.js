@@ -69,4 +69,8 @@ function toggleSubTopics(linkElement) {
     subtopicDiv.classList.add('hidden');
     linkElement.textContent = "Learn more...";
   }
+  function toggleSubTopics(link) {
+    const subtopics = link.nextElementSibling;
+    subtopics.classList.toggle("hidden");
+  }
 }
