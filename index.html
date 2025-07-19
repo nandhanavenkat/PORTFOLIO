@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UFT-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
     <!-- Header section Code -->
-     <header>
+    <header>
         <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
         <ul class="menu">
             <li>
@@ -58,9 +61,9 @@
         <div class="menu-btn">
             <i class="fas fa-bars"></i>
         </div>
-     </header>
-     <!-- Home Section Code -->
-      <section class="home" id="home">
+    </header>
+    <!-- Home Section Code -->
+    <section class="home" id="home">
         <div class="featured-text">
             <div class="hello">
                 <p>Hello I'm</p>
@@ -69,38 +72,47 @@
                 <span id="SliderValue"></span>
             </div>
             <div class="featured-text-info">
-                <p>My name is Nandhana! I'm a Data Analyst.</p>
+                <p>My name is Nandhana! I'm a Final year student of IT.</p>
             </div>
             <div class="social_icons">
-                <a href="https://www.linkedin.com/in/nandhana-v-450306307/"><i class="fab fa-linkedin" style="color:rgb(28, 213, 68)"></i></a>
-                <a href="https://github.com/nandhanavenkat"><i class="fab fa-github" style="color:rgb(28, 213, 68)"></i></a>
-                <a href="#"><i class="fab fa-whatsapp" style="color:rgb(28, 213, 68)"></i></a>
-                <a href="#"><i class="fab fa-instagram" style="color:rgb(28, 213, 68)"></i></a>
+                <a href="https://www.linkedin.com/in/nandhana-v-450306307/" target="_blank">
+                    <i class="fab fa-linkedin" style="color:rgb(28, 213, 68)"></i>
+                </a>
+                <a href="https://github.com/nandhanavenkat" target="_blank">
+                    <i class="fab fa-github" style="color:rgb(28, 213, 68)"></i>
+                </a>
+                <a href="https://wa.me/916379897591" target="_blank">
+                    <i class="fab fa-whatsapp" style="color:rgb(28, 213, 68)"></i>
+                </a>
+                <a href="mailto:nandhana01512@gmail.com">
+                    <i class="fas fa-envelope" style="color:rgb(28, 213, 68)"></i>
+                </a>
             </div>
         </div>
+
         <div class="home-img">
-            <img src="nandhana.jpg" alt="">
+            <img src="nandhana.jpg" alt="Nandhana's Image">
         </div>
-      </section>
-      <!-- About Section Code -->
-       <section class="about" id="about">
+    </section>
+    <!-- About Section Code -->
+    <section class="about" id="about">
         <div class="max-width">
             <div class="about-container">
                 <div class="about">
                     <h1 class="title_h1">About Me</h1>
 
-                    <p>As a final year student of CIET pursuing B.Tech in Information Technology,
-                         my aim is to specialize in data analyst.
-
+                    <p>
+                        I am a final year B.Tech student with a strong interest in data analysis.
+                        I have a good understanding of how to collect, clean, and analyze data to find useful insights.
+                        I am skilled in using tools like <strong>SQL</strong>, <strong>Python</strong>, and
+                        <strong>Excel</strong> to work with data efficiently.
+                        I can also create easy-to-understand charts and reports that help people make smart decisions.
+                        I enjoy using data to solve problems and improve how things work in a business.
+                        My goal is to keep learning and grow into a successful Data Analyst.
                     </p>
 
-                    <div class="about_social">
-                       <a href="https://www.linkedin.com/in/nandhana-v-450306307/"><i class="fab fa-linkedin" style="color:rgb(28, 213, 68)"></i></a>
-                       <a href="https://github.com/nandhanavenkat"><i class="fab fa-github" style="color:rgb(28, 213, 68)"></i></a>
-                       <a href="#"><i class="fab fa-whatsapp" style="color:rgb(28, 213, 68)"></i></a>
-                       <a href="#"><i class="fab fa-instagram" style="color:rgb(28, 213, 68)"></i></a>         
-                   </div>
-                   <a href="#" class="btn-b">Download CV</a>
+
+                    <a href="nandhana_resume.pdf" class="btn-b" download>Download CV</a>
                 </div>
             </div>
         </div>
@@ -108,31 +120,67 @@
     <!-- Skills Section Code -->
     <section class="skills" id="skills">
         <h2 class="heading">My <span>Skills</span></h2>
-        <div class="skil-content">
-            <div class="skills-list">
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Development</h2>
-                    <p></p>
-                    <a href="#">Learn more...</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p></p>
-                    <a href="#">Learn more...</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-server"></i>
-                    <h2>Frontend Development</h2>
-                    <p></p>
-                    <a href="#">Learn more...</a>
-                </div>
+        <div class="skills-list">
+            <!-- Skill Item Template -->
+            <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <h2>Python</h2>
+                <a href="#" onclick="openModal('python')">Learn more...</a>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-file-excel"></i>
+                <h2>Excel</h2>
+                <a href="#" onclick="openModal('excel')">Learn more...</a>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-chart-bar"></i>
+                <h2>Power BI</h2>
+                <a href="#" onclick="openModal('powerbi')">Learn more...</a>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <h2>SQL</h2>
+                <a href="#" onclick="openModal('sql')">Learn more...</a>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-java"></i>
+                <h2>Java</h2>
+                <a href="#" onclick="openModal('java')">Learn more...</a>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-c"></i>
+                <h2>C Programming</h2>
+                <a href="#" onclick="openModal('c')">Learn more...</a>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-chart-pie"></i>
+                <h2>Tableau</h2>
+                <a href="#" onclick="openModal('tableau')">Learn more...</a>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-file-word"></i>
+                <h2>MS Word</h2>
+                <a href="#" onclick="openModal('word')">Learn more...</a>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-book"></i>
+                <h2>Jupyter Notebook</h2>
+                <a href="#" onclick="openModal('jupyter')">Learn more...</a>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-chart-line"></i>
+                <h2>Statistical Skills</h2>
+                <a href="#" onclick="openModal('stats')">Learn more...</a>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-aws"></i>
+                <h2>AWS Cloud</h2>
+                <a href="#" onclick="openModal('aws')">Learn more...</a>
             </div>
         </div>
     </section>
     <!-- Portfolio Section Code -->
-     <section  class="portfolio" id="portfolio">
+    <section class="portfolio" id="portfolio">
         <h2 class="heading">My <span>Portfolio</span></h2>
         <div class="portfolio-content">
             <div class="row">
@@ -211,41 +259,41 @@
     </section>
     <!-- Contact Section Code -->
     <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
-    <form id="contact-form">
-    <div class="input-box">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email Address" required>
-    </div>
-    <div class="input-box">
-        <input type="number" name="phone" placeholder="Phone Number">
-        <input type="text" name="subject" placeholder="Subject">
-    </div>
-    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-    <input type="submit" value="Send Message" class="btn-t">
-</form>
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form id="contact-form">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="number" name="phone" placeholder="Phone Number">
+                <input type="text" name="subject" placeholder="Subject">
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn-t">
+        </form>
 
-</section>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-    (function () {
-        emailjs.init("VBlUp40oApzNLfVyh"); // Your actual public key
-    })();
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("VBlUp40oApzNLfVyh"); // Your actual public key
+        })();
 
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent redirect
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent redirect
 
-        emailjs.sendForm('service_q561rxl', 'template_xqfs346', this)
-            .then(function () {
-                alert('✅ Message sent successfully!');
-                document.getElementById('contact-form').reset();
-            }, function (error) {
-                alert('❌ Failed to send message.\nPlease try again later.');
-                console.log(error);
-            });
-    });
-</script>
+            emailjs.sendForm('service_q561rxl', 'template_xqfs346', this)
+                .then(function () {
+                    alert('✅ Message sent successfully!');
+                    document.getElementById('contact-form').reset();
+                }, function (error) {
+                    alert('❌ Failed to send message.\nPlease try again later.');
+                    console.log(error);
+                });
+        });
+    </script>
 
     <!-- Footer Section Code -->
     <footer class="footer">
@@ -260,6 +308,8 @@
         </p>
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
 </body>
+
 </html>
