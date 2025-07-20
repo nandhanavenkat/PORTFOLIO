@@ -3,9 +3,7 @@
 var SliderCounter = 0;
 var SliderContent = [
     "Data Analyst",
-    "Designer",
-    "Developer",
-    "@ @ @ @",
+
 ];
 
 var SliderValue = document.querySelector("#SliderValue");
@@ -59,18 +57,15 @@ sr.reveal(".featured-text" ,{});
 sr.reveal(".home-img", { delay: 200 });
 
 sr.reveal(".heading", {});
-function toggleSubTopics(linkElement) {
-  const subtopicDiv = linkElement.nextElementSibling;
+  function toggleSubTopics(button) {
+    const subtopics = button.nextElementSibling;
 
-  if (subtopicDiv.classList.contains('hidden')) {
-    subtopicDiv.classList.remove('hidden');
-    linkElement.textContent = "Hide topics...";
-  } else {
-    subtopicDiv.classList.add('hidden');
-    linkElement.textContent = "Learn more...";
+    if (subtopics.style.display === "block") {
+      subtopics.style.display = "none";
+      button.textContent = "Learn more...";
+    } else {
+      subtopics.style.display = "block";
+      button.textContent = "Hide topics...";
+    }
   }
-  function toggleSubTopics(link) {
-    const subtopics = link.nextElementSibling;
-    subtopics.classList.toggle("hidden");
-  }
-}
+
