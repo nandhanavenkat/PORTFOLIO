@@ -415,6 +415,50 @@ li>a>button:hover>span:last-of-type {
     background: #05a0e8;
     transform: translateY(-10px);
 }
+/* -------- Category Titles -------- */
+.category-title {
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: rgba(10, 169, 232, 0.1);
+    padding: 20px 30px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    color: #0af;
+    transition: background 0.3s, color 0.3s;
+    border: 2px solid rgb(10, 169, 232);
+}
+
+.category-title:hover {
+    background: #05a0e8;
+    color: #fff;
+}
+
+/* -------- Subtopics Wrapper -------- */
+.subtopics {
+    background-color: #002;
+    padding: 20px 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #0af;
+    transition: all 0.3s ease-in-out;
+}
+
+/* -------- Individual Skill Items -------- */
+.skill-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.skill-item i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #0af;
+}
+
 /* Portfolio Section Code */
 
 .portfolio-content {
@@ -663,50 +707,4 @@ li>a>button:hover>span:last-of-type {
     .contact form .input-box input {
         width: 100%;
     }
-}
-section {
-  scroll-margin-top: 100px; /* Change this based on navbar height */
-}
-.learn-more {
-   display: inline-block;
-  color: #00bfff;
-  text-decoration: underline;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 16px;
-  margin-top: 10px;
-  transition: color 0.3s ease;
-  font-weight: bold;
-
-}
-
-.learn-more:hover {
-  color: #00dfff;
-}
-
-.subtopics {
-    background-color: #000;
-    display: none;
-   margin-top: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 20px !important;
-  font-weight: 600;
-  background: rgba(0, 0, 0, 0.8);
-  color: #ffffff !important;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease;
-}
-
-.subtopics.hidden {
-  display: none;
-}
-
-.subtopics ul {
-  list-style-type: disc;
-  margin-left: 25px;
-  padding-left: 10px;
-}
-.subtopics ul li {
-  margin-bottom: 12px; /* 👈 Space between subtopics */
 }

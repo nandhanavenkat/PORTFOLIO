@@ -68,4 +68,14 @@ sr.reveal(".heading", {});
       button.textContent = "Hide topics...";
     }
   }
+function toggleCategory(element) {
+        const allSubtopics = document.querySelectorAll('.subtopics');
+        allSubtopics.forEach(sub => {
+            if (sub !== element.nextElementSibling) {
+                sub.style.display = 'none';
+            }
+        });
 
+        const current = element.nextElementSibling;
+        current.style.display = current.style.display === 'block' ? 'none' : 'block';
+    }
