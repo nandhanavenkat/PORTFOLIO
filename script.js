@@ -68,14 +68,16 @@ sr.reveal(".heading", {});
       button.textContent = "Hide topics...";
     }
   }
-function toggleCategory(element) {
-        const allSubtopics = document.querySelectorAll('.subtopics');
-        allSubtopics.forEach(sub => {
-            if (sub !== element.nextElementSibling) {
-                sub.style.display = 'none';
-            }
-        });
+function toggleCategory(clickedTitle) {
+    const allSubtopics = document.querySelectorAll('.subtopics');
+    allSubtopics.forEach(sub => {
+      // Hide all subtopics except the one clicked
+      if (sub.previousElementSibling !== clickedTitle) {
+        sub.style.display = "none";
+      }
+    });
 
-        const current = element.nextElementSibling;
-        current.style.display = current.style.display === 'block' ? 'none' : 'block';
-    }
+    const subtopics = clickedTitle.nextElementSibling;
+    const isVisible = subtopics.style.display === "block";
+    subtopics.style.display = isVisible ? "none" : "block";
+  }

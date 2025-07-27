@@ -364,69 +364,56 @@ li>a>button:hover>span:last-of-type {
     background: none;
 }
 
-/*  Skills Section Code */
-
+/* ----- Skills Section ----- */
 .skills {
     scroll-margin-top: 100px;
     color: #fff;
     background: #001;
+    padding: 60px 20px;
 }
 
 .heading {
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 4.5rem; /* Increased */
+    font-weight: bold;
 }
 
 .skills-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
     margin-top: 50px;
+    padding: 0 20px;
 }
 
-.skills-list div {
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 15px;
+/* ------ Category Container ------ */
+.category-item {
     border: 2px solid rgb(10, 169, 232);
+    border-radius: 15px;
+    padding: 20px;
     transition: background 0.5s, transform 0.5s;
+    background: #010d1a;
 }
 
-.skills-list div i {
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-
-.skills-list div h2 {
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.skills-list div a {
-    text-decoration: none;
-    color: #fff;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.skills-list div:hover {
-    background: #05a0e8;
+.category-item:hover {
+   border-color: #05a0e8;
     transform: translateY(-10px);
+    /* Remove background fill for inner box */
+    background: transparent;
 }
-/* -------- Category Titles -------- */
+
+/* ------ Category Title ------ */
 .category-title {
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 700;
     cursor: pointer;
-    background: rgba(10, 169, 232, 0.1);
-    padding: 20px 30px;
+    background: rgba(10, 169, 232, 0.1);  /* transparent feel */
+    padding: 15px 20px;
     border-radius: 12px;
     margin-bottom: 10px;
     color: #0af;
-    transition: background 0.3s, color 0.3s;
     border: 2px solid rgb(10, 169, 232);
+    transition: color 0.3s, border-color 0.3s;
 }
 
 .category-title:hover {
@@ -434,29 +421,45 @@ li>a>button:hover>span:last-of-type {
     color: #fff;
 }
 
-/* -------- Subtopics Wrapper -------- */
+/* ------ Subtopics List ------ */
 .subtopics {
-    background-color: #002;
-    padding: 20px 30px;
+    background-color: rgba(0, 34, 68, 0.9);  /* dark transparent blue-black */
+    padding: 20px;
     margin-top: 10px;
     border-radius: 10px;
     border: 1px solid #0af;
     transition: all 0.3s ease-in-out;
 }
 
-/* -------- Individual Skill Items -------- */
+/* ------ Individual Skill Items ------ */
 .skill-item {
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* Increased */
     margin-bottom: 15px;
     color: #fff;
 }
 
 .skill-item i {
-    font-size: 24px;
-    margin-right: 15px;
+    font-size: 26px; /* Increased */
+    margin-right: 12px;
     color: #0af;
+}
+
+/* Responsive for small screens */
+@media (max-width: 480px) {
+    .heading {
+        font-size: 3rem;
+    }
+    .category-title {
+        font-size: 1.4rem;
+    }
+    .skill-item {
+        font-size: 1.2rem;
+    }
+    .skill-item i {
+        font-size: 22px;
+    }
 }
 
 /* Portfolio Section Code */
