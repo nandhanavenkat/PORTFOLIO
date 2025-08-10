@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
@@ -124,208 +125,235 @@
     <!-- Skills Section Code -->
     <section class="skills" id="skills">
         <h2 class="heading">My <span>Skills</span></h2>
-        <div class="skills-list">
+        <div class="skills-grid">
 
-            <!-- 🖥️ Programming Languages -->
-            <div class="category-item">
-                <h2 class="category-title" onclick="toggleCategory(this)">🖥️ Programming Languages</h2>
-                <div class="subtopics hidden" style="display: none;">
-                    <div class="skill-item"><i class="fab fa-python"></i> Python</div>
-                    <div class="skill-item"><i class="fas fa-code"></i> C Programming</div>
-                    <div class="skill-item"><i class="fab fa-java"></i> Java</div>
-                </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
             </div>
 
-            <!-- 📊 Data Analysis -->
-            <div class="category-item">
-                <h2 class="category-title" onclick="toggleCategory(this)">📊 Data Analysis</h2>
-                <div class="subtopics hidden" style="display: none;">
-                    <div class="skill-item"><i class="fas fa-cube"></i> NumPy</div>
-                    <div class="skill-item"><i class="fas fa-database"></i> Pandas</div>
-                    <div class="skill-item"><i class="fas fa-chart-line"></i> Matplotlib</div>
-                </div>
+            <div class="skill-card">
+                <i class="fas fa-cube"></i>
+                <h3>Python Libraries</h3>
             </div>
 
-            <!-- 🗃️ Database -->
-            <div class="category-item">
-                <h2 class="category-title" onclick="toggleCategory(this)">🗃️ Database</h2>
-                <div class="subtopics hidden" style="display: none;">
-                    <div class="skill-item"><i class="fas fa-database"></i> MySQL</div>
-                </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>MySQL</h3>
             </div>
 
-            <!-- 📈 Data Visualization Tools -->
-            <div class="category-item">
-                <h2 class="category-title" onclick="toggleCategory(this)">📈 Data Visualization Tools</h2>
-                <div class="subtopics hidden" style="display: none;">
-                    <div class="skill-item"><i class="fas fa-file-excel"></i> MS Excel</div>
-                    <div class="skill-item"><i class="fas fa-chart-line"></i> Power BI</div>
-                    <div class="skill-item"><i class="fas fa-chart-bar"></i> Tableau</div>
-                </div>
+            <div class="skill-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Power BI</h3>
             </div>
 
-            <!-- 📊 Statistical -->
-            <div class="category-item">
-                <h2 class="category-title" onclick="toggleCategory(this)">📊 Statistical</h2>
-                <div class="subtopics hidden" style="display: none;">
-                    <div class="skill-item"><i class="fas fa-vial"></i> Hypothesis Testing</div>
-                    <div class="skill-item"><i class="fas fa-project-diagram"></i> Regression Analysis</div>
-                    <div class="skill-item"><i class="fas fa-random"></i> Correlation and Covariance</div>
-                </div>
-            </div>
-            <!-- ☁️ Cloud -->
-            <div class="category-item">
-                <h2 class="category-title" onclick="toggleCategory(this)">☁️ Cloud</h2>
-                <div class="subtopics hidden" style="display: none;">
-                    <div class="skill-item"><i class="fab fa-aws"></i> AWS</div>
-                </div>
+            <div class="skill-card">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Tableau</h3>
             </div>
 
-            <!-- 🛠️ Tools -->
-            <div class="category-item">
-                <h2 class="category-title" onclick="toggleCategory(this)">🛠️ Tools</h2>
-                <div class="subtopics hidden" style="display: none;">
-                    <div class="skill-item"><i class="fas fa-code"></i> VS Code</div>
-                    <div class="skill-item"><i class="fas fa-file-word"></i> MS Word</div>
-                    <div class="skill-item"><i class="fas fa-book"></i> Jupyter Notebook</div>
-                    <div class="skill-item"><i class="fab fa-github"></i> Git & GitHub</div>
-                </div>
+            <div class="skill-card">
+                <i class="fas fa-file-excel"></i>
+                <h3>MS Excel</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-superscript"></i>
+                <h3>Statistics</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-file-word"></i>
+                <h3>MS Word</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-book"></i>
+                <h3>Jupyter Notebook</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>VS Code</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-github"></i>
+                <h3>Git & GitHub</h3>
             </div>
 
         </div>
     </section>
-        <!-- Portfolio Section Code -->
-        <section class="portfolio" id="portfolio">
-            <h2 class="heading">My <span>Portfolio</span></h2>
-            <div class="portfolio-content">
-                <div class="row">
-                    <img src="c:\Users\nandh\Pictures\woman safety app.jpg" alt="">
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Web Design</h5>
-                        </div>
-                        <div class="row-icons">
-                            <i class="bx bxl-github"></i>
-                        </div>
-                    </div>
-                    <h4>Website Development</h4>
-                </div>
-                <div class="row">
-                    <img src="c:\Users\nandh\Pictures\stop watch and digital clock.jpg" alt="">
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Web Design</h5>
-                        </div>
-                        <div class="row-icons">
-                            <i class="bx bxl-github"></i>
-                        </div>
-                    </div>
-                    <h4>Website Development</h4>
-                </div>
-                <div class="row">
-                    <img src="c:\Users\nandh\Pictures\to do list.jpg" alt="">
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Web Design</h5>
-                        </div>
-                        <div class="row-icons">
-                            <i class="bx bxl-github"></i>
-                        </div>
-                    </div>
-                    <h4>Website Development</h4>
-                </div>
-                <div class="row">
-                    <img src="c:\Users\nandh\Pictures\billing system.jpg" alt="">
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Web Design</h5>
-                        </div>
-                        <div class="row-icons">
-                            <i class="bx bxl-github"></i>
-                        </div>
-                    </div>
-                    <h4>Website Development</h4>
-                </div>
-                <div class="row">
-                    <img src="c:\Users\nandh\Pictures\calculator.jpg" alt="">
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Web Design</h5>
-                        </div>
-                        <div class="row-icons">
-                            <i class="bx bxl-github"></i>
-                        </div>
-                    </div>
-                    <h4>Website Development</h4>
-                </div>
-                <div class="row">
-                    <img src="c:\Users\nandh\Pictures\nandhana.jpg" alt="">
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Web Design</h5>
-                        </div>
-                        <div class="row-icons">
-                            <i class="bx bxl-github"></i>
-                        </div>
-                    </div>
-                    <h4>Website Development</h4>
-                </div>
+
+    <!-- Profiles Section Code -->
+    <section class="profiles" id="profiles">
+        <h2 class="heading">My <span>Profiles</span></h2>
+        <div class="profiles-grid">
+
+            <div class="profile-card">
+                <a href="https://www.hackerrank.com/profile/nandhana01512" target="_blank">
+                    <i class="fab fa-hackerrank hackerrank-icon"></i>
+                    <h3>HackerRank</h3>
+                </a>
             </div>
-        </section>
-        <!-- Contact Section Code -->
-        <section class="contact" id="contact">
-            <h2 class="heading">Contact <span>Me</span></h2>
-            <form id="contact-form">
-                <div class="input-box">
-                    <input type="text" name="name" placeholder="Full Name" required>
-                    <input type="email" name="email" placeholder="Email Address" required>
-                </div>
-                <div class="input-box">
-                    <input type="number" name="phone" placeholder="Phone Number">
-                    <input type="text" name="subject" placeholder="Subject">
-                </div>
-                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Send Message" class="btn-t">
-            </form>
 
-        </section>
-
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script>
-            (function () {
-                emailjs.init("VBlUp40oApzNLfVyh"); // Your actual public key
-            })();
-
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault(); // Prevent redirect
-
-                emailjs.sendForm('service_q561rxl', 'template_xqfs346', this)
-                    .then(function () {
-                        alert('✅ Message sent successfully!');
-                        document.getElementById('contact-form').reset();
-                    }, function (error) {
-                        alert('❌ Failed to send message.\nPlease try again later.');
-                        console.log(error);
-                    });
-            });
-        </script>
-
-        <!-- Footer Section Code -->
-        <footer class="footer">
-            <div class="social">
-                <a href="https://github.com/nandhanavenkat" target="_blank"><i class="bx bxl-github"></i></a>
-                <a href="https://www.linkedin.com/in/nandhana-v-450306307/" target="_blank"><i
-                        class="bx bxl-linkedin"></i></a>
-                <a href="https://wa.me/916379897591" target="_blank"><i class="bx bxl-whatsapp"></i></a>
-                <a href="mailto:nandhana01512@gmail.com"><i class="bx bx-envelope"></i></a>
+            <div class="profile-card">
+                <a href="https://www.codechef.com/users/nandhana_20_06" target="_blank">
+                    <img src="https://s3.amazonaws.com/codechef_shared/sites/all/themes/abessive/logo.png"
+                        alt="CodeChef">
+                    <h3>CodeChef</h3>
+                </a>
             </div>
-            <p class="copyright">
-                &copy; Nandhana | All Rights Reserved
-            </p>
-        </footer>
 
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="script.js"></script>
+            <div class="profile-card">
+                <a href="https://leetcode.com/u/fN6WcdrTZC/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+                        alt="LeetCode">
+                    <h3>LeetCode</h3>
+                </a>
+            </div>
+
+            <div class="profile-card">
+                <a href="https://www.kaggle.com/nandhana20" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" alt="Kaggle">
+                    <h3>Kaggle</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section Code -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">My <span>Portfolio</span></h2>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="c:\Users\nandh\Pictures\woman safety app.jpg" alt="">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5>Web Design</h5>
+                    </div>
+                    <div class="row-icons">
+                        <i class="bx bxl-github"></i>
+                    </div>
+                </div>
+                <h4>Website Development</h4>
+            </div>
+            <div class="row">
+                <img src="c:\Users\nandh\Pictures\stop watch and digital clock.jpg" alt="">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5>Web Design</h5>
+                    </div>
+                    <div class="row-icons">
+                        <i class="bx bxl-github"></i>
+                    </div>
+                </div>
+                <h4>Website Development</h4>
+            </div>
+            <div class="row">
+                <img src="c:\Users\nandh\Pictures\to do list.jpg" alt="">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5>Web Design</h5>
+                    </div>
+                    <div class="row-icons">
+                        <i class="bx bxl-github"></i>
+                    </div>
+                </div>
+                <h4>Website Development</h4>
+            </div>
+            <div class="row">
+                <img src="c:\Users\nandh\Pictures\billing system.jpg" alt="">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5>Web Design</h5>
+                    </div>
+                    <div class="row-icons">
+                        <i class="bx bxl-github"></i>
+                    </div>
+                </div>
+                <h4>Website Development</h4>
+            </div>
+            <div class="row">
+                <img src="c:\Users\nandh\Pictures\calculator.jpg" alt="">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5>Web Design</h5>
+                    </div>
+                    <div class="row-icons">
+                        <i class="bx bxl-github"></i>
+                    </div>
+                </div>
+                <h4>Website Development</h4>
+            </div>
+            <div class="row">
+                <img src="c:\Users\nandh\Pictures\nandhana.jpg" alt="">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5>Web Design</h5>
+                    </div>
+                    <div class="row-icons">
+                        <i class="bx bxl-github"></i>
+                    </div>
+                </div>
+                <h4>Website Development</h4>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section Code -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form id="contact-form">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="number" name="phone" placeholder="Phone Number">
+                <input type="text" name="subject" placeholder="Subject">
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn-t">
+        </form>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("VBlUp40oApzNLfVyh"); // Your actual public key
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent redirect
+
+            emailjs.sendForm('service_q561rxl', 'template_xqfs346', this)
+                .then(function () {
+                    alert('✅ Message sent successfully!');
+                    document.getElementById('contact-form').reset();
+                }, function (error) {
+                    alert('❌ Failed to send message.\nPlease try again later.');
+                    console.log(error);
+                });
+        });
+    </script>
+
+    <!-- Footer Section Code -->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://github.com/nandhanavenkat" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/nandhana-v-450306307/" target="_blank"><i
+                    class="bx bxl-linkedin"></i></a>
+            <a href="https://wa.me/916379897591" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+            <a href="mailto:nandhana01512@gmail.com"><i class="bx bx-envelope"></i></a>
+        </div>
+        <p class="copyright">
+            &copy; Nandhana | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
 
 </body>
 

@@ -93,7 +93,7 @@ section {
 /* Common heading style with double color */
 .heading,
 .title_h1 {
-    font-size: 4.5rem;
+    font-size: 6.5rem;
     font-weight: bold;
     text-align: center;
     color: #fff;
@@ -161,7 +161,7 @@ button span {
 .menu li {
     display: flex;
     gap: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #fff;
 }
 
@@ -198,7 +198,7 @@ li>a>button:hover>span:last-of-type {
 }
 
 .menu {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin-left: 4rem;
     transition: all 0.3s ease;
@@ -374,7 +374,7 @@ li>a>button:hover>span:last-of-type {
     margin-bottom: 1.1rem;
     position: relative;
     display: inline-block;
-    font-size: 4.5rem;
+    font-size: 6.5rem;
 }
 
 .about p {
@@ -431,99 +431,129 @@ li>a>button:hover>span:last-of-type {
 
 /* ----- Skills Section ----- */
 .skills {
-    scroll-margin-top: 100px;
-    color: #fff;
-    background: url('bg.png') no-repeat center center/cover;
-    padding: 60px 20px;
-}
-
-.heading {
+    padding: 50px 0;
     text-align: center;
-    font-size: 4.5rem; /* Increased */
-    font-weight: bold;
-}
-
-.skills-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-    padding: 0 20px;
-}
-
-/* ------ Category Container ------ */
-.category-item {
-    border: 2px solid rgb(10, 169, 232);
-    border-radius: 15px;
-    padding: 20px;
-    transition: background 0.5s, transform 0.5s;
-    background: #010d1a;
-}
-
-.category-item:hover {
-   border-color: #05a0e8;
-    transform: translateY(-10px);
-    /* Remove background fill for inner box */
     background: transparent;
 }
 
-/* ------ Category Title ------ */
-.category-title {
-    font-size: 1.8rem;
+.skills .heading {
+    font-size: 6.5rem; /* Bigger heading */
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 60px; /* Increased from 30px to 40px for more space */
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+
+.skill-card {
+    background: transparent;
+    padding: 40px 25px; /* Increased padding for bigger height */
+    border-radius: 15px;
+    border: 2px solid rgba(10, 169, 232, 0.5);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    backdrop-filter: blur(3px);
+}
+
+.skill-card i {
+    font-size: 85px; /* Bigger icons */
+    color: #0aa9e8;
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    font-size: 2.5rem; /* Bigger skill name */
     font-weight: 700;
-    cursor: pointer;
-    background: rgba(10, 169, 232, 0.1);  /* transparent feel */
-    padding: 15px 20px;
-    border-radius: 12px;
-    margin-bottom: 10px;
-    color: #0af;
-    border: 2px solid rgb(10, 169, 232);
-    transition: color 0.3s, border-color 0.3s;
+    color: white;
 }
 
-.category-title:hover {
-    background: #05a0e8;
-    color: #fff;
+.skill-card:hover {
+    border-color: #0aa9e8;
+    box-shadow: 0 0 25px #0aa9e8; /* Stronger glow */
+    transform: translateY(-8px);
+}
+/* ----- Profiles Section ----- */
+
+.profiles {
+    padding: 50px 0;
+    background: transparent;
+    text-align: center;
 }
 
-/* ------ Subtopics List ------ */
-.subtopics {
-    background-color: rgba(0, 34, 68, 0.9);  /* dark transparent blue-black */
-    padding: 20px;
-    margin-top: 10px;
-    border-radius: 10px;
-    border: 1px solid #0af;
-    transition: all 0.3s ease-in-out;
+.profiles .heading {
+    font-size: 6.5rem; /* Match Skills heading */
+    margin-bottom: 50px;
+    font-weight: bold;
 }
 
-/* ------ Individual Skill Items ------ */
-.skill-item {
+.profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Exactly 2 per row */
+    gap: 60px; /* Same spacing as Skills */
+    max-width: 1100px; /* Same max width */
+    margin: auto;
+    padding: 0 20px;
+}
+
+.profile-card {
+    background: transparent;
+    padding: 45px 30px; /* Slightly more padding */
+    border-radius: 15px;
+    border: 2px solid rgba(10, 169, 232, 0.5);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    backdrop-filter: blur(3px);
+}
+
+.profile-card i {
+    font-size: 85px; /* Icons slightly smaller */
+    margin-bottom: 20px;
+    color: #0aa9e8;
+}
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+
+.profile-card h3 {
+    font-size: 2.8rem; /* Slightly bigger text */
+    font-weight: 700;
+    color: white;
+}
+
+.profile-card:hover {
+    border-color: #0aa9e8;
+    box-shadow: 0 0 25px #0aa9e8;
+    transform: translateY(-8px);
+}
+
+.profile-card a {
+    text-decoration: none;
+    color: inherit;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    font-size: 1.4rem; /* Increased */
-    margin-bottom: 15px;
-    color: #fff;
 }
 
-.skill-item i {
-    font-size: 26px; /* Increased */
-    margin-right: 12px;
-    color: #0af;
-}
-
-/* Responsive for small screens */
-@media (max-width: 480px) {
-    .heading {
-        font-size: 3rem;
-    }
-    .category-title {
-        font-size: 1.4rem;
-    }
-    .skill-item {
-        font-size: 1.2rem;
-    }
-    .skill-item i {
-        font-size: 22px;
+/* Mobile: show 1 per row */
+@media (max-width: 768px) {
+    .profiles-grid {
+        grid-template-columns: 1fr;
     }
 }
 
